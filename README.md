@@ -11,85 +11,85 @@ Backend: SQL
 ---
 Skills:
 Frontend:
-•	Created the visuals of the website’s pages using HTML and CSS:
-  o	Login
-  o	Logout
-  o	Profile
-  o	Timeline
+1. Created the visuals of the website’s pages using HTML and CSS:
+  a. Login
+  b. Logout
+  c. Profile
+  d. Timeline
 
 Middle End:
-•	Connected SQL to PHP to an online interactive website
-•	Allowed not only textual data to be stored in the local database, but also images 
-•	SQL
-  o	Table creation and population
-  o	Primary and secondary keys
-  o	Indices
-  o	Query strings
-•	All changes made in the website reflects in the database
+2. Connected SQL to PHP to an online interactive website
+3. Allowed not only textual data to be stored in the local database, but also images 
+4. SQL
+  a. Table creation and population
+  b. Primary and secondary keys
+  c. Indices
+  d. Query strings
+5. All changes made in the website reflects in the database
 
 Backend:
-•	Created working links for the website’s pages
-•	Allowed users to sign in with real emails and names:
-  o	Used phpMyAdmin to create unique ids and generally generated user ids, connected to a user’s first name, last name, and email
+6. Created working links for the website’s pages
+7. Allowed users to sign in with real emails and names:
+  a. Used phpMyAdmin to create unique ids and generally generated user ids, connected to a user’s first name, last name, and email
 
 Posts
-o	Allowed each post on a user’s feed to have its own unique id
-o	Connected each post to a user’s user id
-o	Stored each post in the database
-  •	myphpMyAdmin; MySQL:
-o	Used indexes to allow certain people or content to be filtered and searched for
-o	Indexed to allow php to search tables
-  •	Allowed “comments” to populate their own table in the database
-  •	Created error messages when:
-o	Incorrect prompts were inputted in the submission fields
-  •	Allows posts to be deleted based on unique post id
+8. Allowed each post on a user’s feed to have its own unique id
+9. Connected each post to a user’s user id
+10. Stored each post in the database
+  a. myphpMyAdmin; MySQL:
+11. Used indexes to allow certain people or content to be filtered and searched for
+12. Indexed to allow php to search tables
+  a. Allowed “comments” to populate their own table in the database
+  b. Created error messages when:
+13. Incorrect prompts were inputted in the submission fields
+  a. Allows posts to be deleted based on unique post id
 
 Profile
-o	Clickable links in text and profile photo in the top corner
-o	Allowed changes in profile pictures and cover photos
-  	Allowed unique url to reflect in the url
-o	Created a max mb cap for uploading profile pictures
-o	Automatically resizes and crops non-square profile pictures to fit in a perfect circle border 
-o	Used random name/number generators to generate unique names for each photo uploaded into a created user folder after uploading to avoid hypothetical users overwriting each other’s profile photos
-  	Allows a copy “thumbnail” to be saved to the user’s folder for reference
-o	Will add a post when profile photos are updated
-o	Setting limits to owner of account only when editing or deleting post information
+14. Clickable links in text and profile photo in the top corner
+15. Allowed changes in profile pictures and cover photos
+  a. Allowed unique url to reflect in the url
+16. Created a max mb cap for uploading profile pictures
+17. Automatically resizes and crops non-square profile pictures to fit in a perfect circle border 
+18. Used random name/number generators to generate unique names for each photo uploaded into a created user folder after uploading to avoid hypothetical users overwriting each other’s profile photos
+  a. Allows a copy “thumbnail” to be saved to the user’s folder for reference
+19. Will add a post when profile photos are updated
+20. Setting limits to owner of account only when editing or deleting post information
 
 Friend’s pages
-o	Using query strings to load different profiles than owner (me) via unique urls
-  	Matched user id 
+21. Using query strings to load different profiles than owner (me) via unique urls
+  a. Matched user id 
 
 Likes
-o	Likes: Posts, Profiles, and Comments
-o	Connected likes to userid to prevent duplicate likes
-o	Created new database table in phpMyAdmin to store like count per user
-o	Used JSON to transer data from arrays to be able to see both outside and inside direct database
-o	Like and unlike posts based on user id
-o	Grammar “people liked” vs “person liked” vs “you liked and _ people liked”
+22. Likes: Posts, Profiles, and Comments
+23. Connected likes to userid to prevent duplicate likes
+24. Created new database table in phpMyAdmin to store like count per user
+25. Used JSON to transer data from arrays to be able to see both outside and inside direct database
+26. Like and unlike posts based on user id
+27. Grammar “people liked” vs “person liked” vs “you liked and _ people liked”
 
 Edit and Delete
-o	Can only delete own post connected to your user id
-o	Edit can change text and image posts and automatically refresh to the profile
+28. Can only delete own post connected to your user id
+29. Edit can change text and image posts and automatically refresh to the profile
 
 Security
-1.	SQL injection prevention via:
+30.	SQL injection prevention via:
   a.	Variable escaping
   b.	Prepared statements
   c.	Html escaping
   d.	Input whitelisting/blacklisting 
-2.	Password hashing
+31.	Password hashing
   a.	Limited login tries
-3.	Security through obscurity
+32.	Security through obscurity
   a.	Limited error info
     i.	Hiding developer errors (display_errors) using XAMPP ini files
   b.	Private/public folders
   c.	index.php in all folders
   d.	Hiding developer errors
-4.	Database protection
+33.	Database protection
   a.	Encrypting user’s confidential information within the database even if database is hacked using formula algorithms
     i.	One-way encryption (not used to keep this project simple)
     ii.	Hashing algorithms (for user’s passwords)
-1.	md5
-2.	sha1
-3.	hash()
+34.	md5
+35.	sha1
+36.	hash()
   b.	Using created hashed password to compare to the hashed password stored in system
